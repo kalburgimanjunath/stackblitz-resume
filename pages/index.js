@@ -9,12 +9,15 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Hero data={MYDATA[0]} />
-
       <POST items={POSTS} title="Recent Blogs" />
       <div>
         <Link href="/blog">See All Blogs</Link>
       </div>
-      <Projects data={MYDATA[0]} />
+      <Projects data={MYDATA[0].projects} title="Projects" />
+      <Projects data={MYDATA[0].projects} title="Upcoming Projects" />
+      <Projects data={MYDATA[0].projects} title="Tech Talks and Videos" />
+
+      <POST items={POSTS} title="Life Changelog and Updates" />
     </div>
   );
 }

@@ -1,6 +1,32 @@
 export const POSTS = [
-  { id: 1, title: 'post1', subtitle: 'sub title', description: 'description' },
-  { id: 2, title: 'post2', subtitle: 'sub title', description: 'description' },
-  { id: 3, title: 'post3', subtitle: 'sub title', description: 'description' },
-  { id: 4, title: 'post4', subtitle: 'sub title', description: 'description' },
+  {
+    id: 1,
+    title:
+      'Ace the Javascript Interview - Practical questions to help you clear your next interview1',
+    subtitle: 'sub title',
+    description:
+      'Ace the Javascript Interview - Practical questions to help you clear your next interview Ace the Javascript Interview - Practical questions to help you clear your next interview',
+  },
+  {
+    id: 2,
+    title: 'Free portfolio website template that gets you hired in 2021',
+    subtitle: 'sub title',
+    description:
+      'Ace the Javascript Interview - Practical questions to help you clear your next interview Ace the Javascript Interview - Practical questions to help you clear your next interview',
+  },
+  {
+    id: 3,
+    title:
+      'Ace the Javascript Interview - Practical questions to help you clear your next interview3',
+    subtitle: 'sub title',
+    description:
+      'Ace the Javascript Interview - Practical questions to help you clear your next interview Ace the Javascript Interview - Practical questions to help you clear your next interview',
+  },
+  {
+    id: 4,
+    title: 'Free portfolio website template that gets you hired in 2021',
+    subtitle: 'sub title',
+    description:
+      'Ace the Javascript Interview - Practical questions to help you clear your next interview Ace the Javascript Interview - Practical questions to help you clear your next interview',
+  },
 ];

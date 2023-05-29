@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link href="/quotes">Quotes</Link>
         </li>
         <li>
-          <Link href="/projects">Projects</Link>
+          <Link href="/project">Projects</Link>
         </li>
       </ul>
     </div>

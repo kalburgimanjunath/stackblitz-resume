@@ -1,9 +1,9 @@
-export default function Projects({ data }) {
+export default function Projects({ data, title }) {
   return (
     <div>
-      <h3>Projects</h3>
+      <h3>{title}</h3>
       {data &&
-        data.projects.map((item) => {
+        data.map((item) => {
           return (
             <>
               <div style={{ width: 20, height: 20 }}>
