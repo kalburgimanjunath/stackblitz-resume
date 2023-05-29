@@ -1,0 +1,11 @@
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  background-color: azure;
+}
+.navbar ul li {
+  padding: 20px 10px;
+}
+.navbar ul li:hover {
+  background-color: bisque;
+}
