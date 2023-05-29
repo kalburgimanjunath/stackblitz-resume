@@ -1,3 +1,5 @@
+import { SNIPPETS } from '../api/snippets';
+import Link from 'next/link';
 export default function Index() {
   return (
     <div>
@@ -7,6 +9,16 @@ export default function Index() {
         🧩. The page contains functions and code snippets which can be used on
         your webpage.
       </p>
+      <div>
+        {SNIPPETS &&
+          SNIPPETS.map((item) => {
+            return (
+              <div>
+                <Link href={`./snippets${item.liveurl}`}>{item.title}</Link>
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
 }
