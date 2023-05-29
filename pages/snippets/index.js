@@ -1,4 +1,4 @@
-export default function Snippets() {
+export default function Index() {
   return (
     <div>
       <h3>Snippets</h3>
