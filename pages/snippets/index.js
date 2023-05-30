@@ -1,8 +1,9 @@
 import { SNIPPETS } from '../api/snippets';
+import styles from '../../styles/Home.module.css';
 import Link from 'next/link';
 export default function Index() {
   return (
-    <div>
+    <div className={styles.container}>
       <h3>Snippets</h3>
       <p>
         Reusable code snippets that can be easily integrated in your application

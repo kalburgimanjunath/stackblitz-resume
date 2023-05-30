@@ -1,11 +1,18 @@
+.navbar {
+  /* margin: auto 20%; */
+}
 .navbar ul {
   display: flex;
   list-style-type: none;
-  background-color: azure;
+  background-color: #fad4d8;
+  margin: 0;
+  justify-content: space-evenly;
+  border-radius: 20px 0 20px 0;
 }
 .navbar ul li {
   padding: 20px 10px;
 }
 .navbar ul li:hover {
-  background-color: bisque;
+  background-color: #88a0a8;
+  color: #dbd3c9;
 }

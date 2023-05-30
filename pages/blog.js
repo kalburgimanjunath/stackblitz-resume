@@ -1,20 +1,10 @@
 import { POSTS } from './api/posts';
 import { POST } from '../components/Post';
 import Link from 'next/link';
+import styles from '../styles/Home.module.css';
 export default function Blog() {
-  // const POST = ({ item }) => {
-  //   return (
-  //     <>
-  //       <div className="post-item">
-  //         <h6>{item.title}</h6>
-  //         <div>{item.subtitle}</div>
-  //         <div>{item.description}</div>
-  //       </div>
-  //     </>
-  //   );
-  // };
   return (
-    <div>
+    <div className={styles.container}>
       <h2>Blog</h2>
       <p>
         I've been programming for almost 12 years now. Throughout this year,
