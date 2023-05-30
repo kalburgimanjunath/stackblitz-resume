@@ -7,7 +7,7 @@ import Projects from '../components/Projects';
 import Link from 'next/link';
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={(styles.container, 'container mx-auto text-amber-800')}>
       <Hero data={MYDATA[0]} />
       <POST items={POSTS} title="Recent Blogs" />
       <div>
