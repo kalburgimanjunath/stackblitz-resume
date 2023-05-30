@@ -10,7 +10,7 @@ export default function Navbar() {
         </li>
         <li className="hover:bg-gray-100">
           <Link href="/blog">
-            Blog <i class="bi bi-1-circle-fill"></i>
+            Blog <i className="bi bi-1-circle-fill"></i>
           </Link>
         </li>
         <li className="hover:bg-gray-100">
