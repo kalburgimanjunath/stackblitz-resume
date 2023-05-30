@@ -1,8 +1,10 @@
 @import 'navbar.module.css';
 @import 'card.module.css';
+@import 'popover.module.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body {
   padding: 0;

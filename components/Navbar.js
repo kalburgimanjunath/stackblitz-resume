@@ -9,7 +9,9 @@ export default function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li className="hover:bg-gray-100">
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog">
+            Blog <i class="bi bi-1-circle-fill"></i>
+          </Link>
         </li>
         <li className="hover:bg-gray-100">
           <Link href="/snippets">Snippets</Link>

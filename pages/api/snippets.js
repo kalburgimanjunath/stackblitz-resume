@@ -8,15 +8,15 @@ export const SNIPPETS = [
     image: '',
   },
   {
-    id: 1,
-    title: 'Dropdown',
+    id: 2,
+    title: 'Popover',
     description: 'description',
-    liveurl: '/dropdown',
+    liveurl: '/popover',
     source: '',
     image: '',
   },
   {
-    id: 1,
+    id: 3,
     title: 'Toast',
     description: 'description',
     liveurl: '/toast',
@@ -24,7 +24,7 @@ export const SNIPPETS = [
     image: '',
   },
   {
-    id: 1,
+    id: 4,
     title: 'demo',
     description: 'description',
     liveurl: '',
@@ -32,7 +32,7 @@ export const SNIPPETS = [
     image: '',
   },
   {
-    id: 1,
+    id: 5,
     title: 'demo',
     description: 'description',
     liveurl: '',
@@ -40,7 +40,7 @@ export const SNIPPETS = [
     image: '',
   },
   {
-    id: 1,
+    id: 6,
     title: 'demo',
     description: 'description',
     liveurl: '',
@@ -48,7 +48,7 @@ export const SNIPPETS = [
     image: '',
   },
   {
-    id: 1,
+    id: 7,
     title: 'demo',
     description: 'description',
     liveurl: '',

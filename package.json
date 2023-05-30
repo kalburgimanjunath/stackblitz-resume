@@ -11,6 +11,8 @@
     "@emotion/react": "^11.11.0",
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.18",
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-popover": "1.0.6",
     "bootstrap-icons": "^1.10.5",
     "framer-motion": "^10.12.16",
     "next": "^13.0.6",
