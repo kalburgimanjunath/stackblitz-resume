@@ -1,13 +1,26 @@
 import { CodeSection } from 'react-code-section-lib';
 export default function Index() {
-  const value = ` import { render, screen } from '@testing-library/react';
- import App from './App';
+  const value = `import { ToastContainer } from "react-toastify";
+  import "react-toastify/dist/ReactToastify.css";
   
-  test('renders learn react link', () => {
-    render(<App />);
-    const linkElement = screen.getByText(/learn react/i);
-    expect(linkElement).toBeInTheDocument();
-  });`;
+  function MyApp({ Component, pageProps }) {
+    return (
+      <>
+        <ToastContainer />
+        <Component {...pageProps} />
+      </>
+    );
+  }
+  
+  const logout = async () => {
+    await firebase.auth().signOut();
+    dispatch({
+      type: "LOGOUT",
+    });
+    toast.success("🚀 Logged out successfully!");
+    router.push("/login");
+  };
+  `;
   return (
     <div>
       <h3>Toast</h3>
