@@ -37,3 +37,9 @@ a {
     @apply font-bold text-lg;
   }
 }
+.primary-button {
+  background-color: blue;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+}

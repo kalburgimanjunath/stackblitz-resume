@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Hero({ data }) {
   console.log(data);
   return (
@@ -8,6 +9,9 @@ export default function Hero({ data }) {
         {data && data.bio ? data.bio : ''}Find me on Twitter for tech updates
         and memes.
       </p>
+      <button type="button" className="primary-button">
+        Know More
+      </button>
     </div>
   );
 }
