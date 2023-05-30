@@ -1,9 +1,9 @@
 export const SNIPPETS = [
   {
     id: 1,
-    title: 'Menu',
+    title: 'Navbar',
     description: 'description',
-    liveurl: '/menu',
+    liveurl: '/navbar',
     source: '',
     image: '',
   },
