@@ -12,6 +12,9 @@ export default function Project() {
           checkout my blog while you're here. I write about technology, learning
           and memes.
         </p>
+        <button type="button" className="primary-button p-5 mt-10 bg-blue-100">
+          Know More
+        </button>
       </div>
       <Projects data={MYDATA[0].projects} title="Full Stack" />
       <Projects data={MYDATA[0].projects} title="Upcoming Projects" />

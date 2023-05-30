@@ -7,6 +7,9 @@ export default function Quotes() {
         Write anything for future visitors of this website. I'd love a random
         joke though.
       </p>
+      <button type="button" className="primary-button p-5 mt-10 bg-blue-100">
+        Know More
+      </button>
     </div>
   );
 }

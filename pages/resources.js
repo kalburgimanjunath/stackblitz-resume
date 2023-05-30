@@ -9,6 +9,9 @@ export default function Resources() {
         Helpful websites that I've been using for years that have helped me in
         developing applications and much more. 🔥
       </p>
+      <button type="button" className="primary-button p-5 mt-10 bg-blue-100">
+        Know More
+      </button>
       <h3>Utilities</h3>
       <h3>User Interface</h3>
       <h3>Everyday use</h3>

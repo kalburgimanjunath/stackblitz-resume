@@ -56,14 +56,14 @@ export default function Index() {
           </CodeSection>
         </li>
       </ol>
-      <>
+      <div className="m-1 p-2 text-black-100 font-bold">
         <Link href="../../../demos/toast/" target="_new">
           Live Demo
         </Link>
         <Link href="/" target="_new">
           Source Code
         </Link>
-      </>
+      </div>
     </div>
   );
 }

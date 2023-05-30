@@ -13,10 +13,13 @@ export default function Blog() {
           Use the search below to filter by title.
         </p>
       </div>
+      <button type="button" className="primary-button p-5 mt-10 bg-blue-100">
+        Know More
+      </button>
       <POST items={POSTS} title="Most Popular" />
-      <div>
+      {/* <div>
         <Link href="/blog">See All Blogs</Link>
-      </div>
+      </div> */}
       <POST items={POSTS} title="All Posts" />
       <POST items={POSTS} title="Free Code Camp" />
     </div>
