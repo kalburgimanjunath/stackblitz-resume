@@ -10,7 +10,7 @@ export default function Home() {
     <div className={(styles.container, 'container mx-auto bg-gray-100')}>
       <Hero data={MYDATA[0]} />
       <POST items={POSTS} title="Recent Blogs" />
-      <div>
+      <div className="pl-24 p-1">
         <Link href="/blog">See All Blogs</Link>
       </div>
       <Projects data={MYDATA[0].projects} title="Projects" />

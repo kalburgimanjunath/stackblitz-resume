@@ -38,8 +38,5 @@ a {
   }
 }
 .primary-button {
-  background-color: blue;
-  padding: 5px;
-  color: white;
   border-radius: 10px;
 }

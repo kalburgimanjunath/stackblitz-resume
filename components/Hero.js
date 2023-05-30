@@ -9,7 +9,7 @@ export default function Hero({ data }) {
         {data && data.bio ? data.bio : ''}Find me on Twitter for tech updates
         and memes.
       </p>
-      <button type="button" className="primary-button">
+      <button type="button" className="primary-button p-5 mt-10 bg-blue-100">
         Know More
       </button>
     </div>

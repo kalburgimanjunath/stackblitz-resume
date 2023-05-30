@@ -29,7 +29,7 @@ export default function Index() {
   const syntax = `toast.success("🚀 Logged out successfully!");
 `;
   return (
-    <div>
+    <div className="p-24">
       <h3>Toast</h3>
       <div>A simple reusable notification toasts</div>
       <CodeSection theme="dark" lang="react">

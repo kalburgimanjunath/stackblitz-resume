@@ -3,7 +3,7 @@ import { MYDATA } from './api/mydata';
 import styles from '../styles/Home.module.css';
 export default function Resources() {
   return (
-    <div className={styles.container}>
+    <div className="p-24">
       <h3>Resources</h3>
       <p>
         Helpful websites that I've been using for years that have helped me in
