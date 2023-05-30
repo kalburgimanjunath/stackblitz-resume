@@ -41,4 +41,25 @@ export const RESOURCES = [
     link: 'https://www.productivity.com/',
     rtype: 'productivity',
   },
+  {
+    id: 5,
+    title: 'reach ui',
+    description: 'description1',
+    link: 'https://reach.tech/',
+    rtype: 'userinterface',
+  },
+  {
+    id: 6,
+    title: 'React Stately',
+    description: 'description1',
+    link: 'https://react-spectrum.adobe.com/index.html',
+    rtype: 'userinterface',
+  },
+  {
+    id: 7,
+    title: 'reakit.io',
+    description: 'description1',
+    link: 'https://reakit.io/',
+    rtype: 'userinterface',
+  },
 ];
