@@ -14,7 +14,7 @@ export default function Hero({ data }) {
             </Popover.Trigger>
             <Popover.Portal>
               <Popover.Content className="PopoverContent" sideOffset={5}>
-                Some more info…
+                Some more info1…
                 <Popover.Arrow className="PopoverArrow" />
               </Popover.Content>
             </Popover.Portal>
@@ -25,7 +25,7 @@ export default function Hero({ data }) {
             </Popover.Trigger>
             <Popover.Portal>
               <Popover.Content className="PopoverContent" sideOffset={5}>
-                Some more info…
+                Some more info2…
                 <Popover.Arrow className="PopoverArrow" />
               </Popover.Content>
             </Popover.Portal>
