@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import * as Popover from '@radix-ui/react-popover';
 export default function Hero({ data }) {
-  console.log(data);
   return (
     <div className="p-24">
       <h4 className="text-lg">Manjunath Kalburgi</h4>
@@ -14,7 +13,10 @@ export default function Hero({ data }) {
             </Popover.Trigger>
             <Popover.Portal>
               <Popover.Content className="PopoverContent" sideOffset={5}>
-                Some more info1…
+                <img
+                  src="https://picsum.photos/200/300"
+                  style={{ width: 200, height: 300 }}
+                />
                 <Popover.Arrow className="PopoverArrow" />
               </Popover.Content>
             </Popover.Portal>
@@ -25,7 +27,14 @@ export default function Hero({ data }) {
             </Popover.Trigger>
             <Popover.Portal>
               <Popover.Content className="PopoverContent" sideOffset={5}>
-                Some more info2…
+                <ul>
+                  <li>Founder: @Sensvio App</li>
+                  <li>Mentorinig: </li>
+                  <li>Helping Frontend Developer : </li>
+                  <li>Web Templates and Components: @mywebkit</li>
+                  <li>Blogs: @myblog</li>
+                  <li>Tech videos and snippets: @youtube</li>
+                </ul>
                 <Popover.Arrow className="PopoverArrow" />
               </Popover.Content>
             </Popover.Portal>
