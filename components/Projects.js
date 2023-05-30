@@ -6,9 +6,9 @@ export default function Projects({ data, title }) {
         data.map((item) => {
           return (
             <>
-              <div style={{ width: 20, height: 20 }}>
+              {/* <div style={{ width: 20, height: 20 }}>
                 <img src={item.imageurl} style={{ width: 20, height: 20 }} />
-              </div>
+              </div> */}
               <div>{item.title}</div>
               <div>{item.description}</div>
               <div>
