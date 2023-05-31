@@ -29,7 +29,15 @@ export default function Hero({ data }) {
               <Popover.Content className="PopoverContent" sideOffset={5}>
                 <ul>
                   <li>Founder: @Sensvio App</li>
-                  <li>Mentorinig: </li>
+                  <li>
+                    Mentorinig:
+                    <Link href="https://www.codementor.io/@manjunathkalburgi490">
+                      @codementor
+                    </Link>
+                    <Link href="https://www.codementor.io/@manjunathkalburgi490">
+                      @MentorCruise
+                    </Link>
+                  </li>
                   <li>Helping Frontend Developer : </li>
                   <li>Web Templates and Components: @mywebkit</li>
                   <li>Blogs: @myblog</li>
