@@ -26,23 +26,25 @@ export default function Hero({ data }) {
               | All in One other cool things
             </Popover.Trigger>
             <Popover.Portal>
-              <Popover.Content className="PopoverContent" sideOffset={5}>
-                <ul>
-                  <li>Founder: @Sensvio App</li>
-                  <li>
-                    Mentorinig:
-                    <Link href="https://www.codementor.io/@manjunathkalburgi490">
-                      @codementor
-                    </Link>
-                    <Link href="https://www.codementor.io/@manjunathkalburgi490">
-                      @MentorCruise
-                    </Link>
-                  </li>
-                  <li>Helping Frontend Developer : </li>
-                  <li>Web Templates and Components: @mywebkit</li>
-                  <li>Blogs: @myblog</li>
-                  <li>Tech videos and snippets: @youtube</li>
-                </ul>
+              <Popover.Content className="PopoverContent w-full" sideOffset={5}>
+                <div className="w-full leading-loose md:text-xl md:leading-loose">
+                  <div>
+                    <div>Founder: @Sensvio App @algointerviewkit</div>
+                    <div>
+                      Mentorinig:
+                      <Link href="https://www.codementor.io/@manjunathkalburgi490">
+                        @codementor
+                      </Link>
+                      <Link href="https://www.codementor.io/@manjunathkalburgi490">
+                        @MentorCruise
+                      </Link>
+                    </div>
+                    <div>Helping Frontend Developer :@algointerviewkit </div>
+                    <div>Web Templates and Components: @mywebkit</div>
+                    <div>Blogs: @myblog</div>
+                    <div>Tech videos and snippets: @youtube</div>
+                  </div>
+                </div>
                 <Popover.Arrow className="PopoverArrow" />
               </Popover.Content>
             </Popover.Portal>
