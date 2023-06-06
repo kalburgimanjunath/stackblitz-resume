@@ -24,22 +24,22 @@ export default function Coverletter() {
   I am excited about the opportunity to join ${user.companyName} and contribute to its continued growth. Please find attached my resume for further details on my experience.
   
   Thank you for considering my application. I look forward to the possibility of discussing my qualifications in more detail.
-    
+  Sincerely,
+  ${senderName}  
     `;
-      setMessageBody(newMessageBody);
-    } else {
-      let newmessageBody = `Dear ${receipentName},
-
-I am writing to apply for the ${jobTitle} position at ${companyName}. With ${experienceYear} years of experience in ${relevantField}, I am confident in my ability to contribute to your organization's success.
-
-In my previous roles, I have consistently delivered exceptional results by [Briefly highlight your key accomplishments or responsibilities]. I possess strong skills in skills, which enable me to thrive in dynamic environments.
-
-I am excited about the opportunity to join ${companyName} and contribute to its continued growth. Please find attached my resume for further details on my experience.
-
-Thank you for considering my application. I look forward to the possibility of discussing my qualifications in more detail.  `;
       setMessageBody(newMessageBody);
     }
   }, []);
+  //   const newmessageBody2 = `Dear ${receipentName},
+
+  // I am writing to apply for the ${jobTitle} position at ${companyName}. With ${experienceYear} years of experience in ${relevantField}, I am confident in my ability to contribute to your organization's success.
+
+  // In my previous roles, I have consistently delivered exceptional results by [Briefly highlight your key accomplishments or responsibilities]. I possess strong skills in skills, which enable me to thrive in dynamic environments.
+
+  // I am excited about the opportunity to join ${companyName} and contribute to its continued growth. Please find attached my resume for further details on my experience.
+
+  // Thank you for considering my application. I look forward to the possibility of discussing my qualifications in more detail.  `;
+  //   setMessageBody(newMessageBody2);
 
   // const [user, setUser] = useState([]);
 
@@ -53,9 +53,9 @@ Thank you for considering my application. I look forward to the possibility of d
             jobTitle: '',
             companyName: '',
             sourceName: '',
-            experienceYear: '',
+            experienceYear: '12',
             relevantField: '',
-            skills: '',
+            skills: 'reactjs,reactnative,html5,css3',
           }}
           validate={(values) => {
             const errors = {};
