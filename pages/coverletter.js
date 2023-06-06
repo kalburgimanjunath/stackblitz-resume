@@ -19,7 +19,7 @@ export default function Coverletter() {
   
   I am writing to apply for the ${user.jobTitle} position at ${user.companyName}. With ${user.experienceYear} years of experience in ${user.relevantField}, I am confident in my ability to contribute to your organization's success.
   
-  In my previous roles, I have consistently delivered exceptional results by [Briefly highlight your key accomplishments or responsibilities]. I possess strong skills in skills, which enable me to thrive in dynamic environments.
+  In my previous roles, I have consistently delivered exceptional results by ${user.highlight}. I possess strong skills in ${skills}, which enable me to thrive in dynamic environments.
   
   I am excited about the opportunity to join ${user.companyName} and contribute to its continued growth. Please find attached my resume for further details on my experience.
   
@@ -56,6 +56,8 @@ export default function Coverletter() {
             experienceYear: '12',
             relevantField: '',
             skills: 'reactjs,reactnative,html5,css3',
+            highlight:
+              'Leading Frontend development for the group of Oracle Health Care Product and Honeywell ACS Software CoE,Salesforce LWC',
           }}
           validate={(values) => {
             const errors = {};
@@ -153,6 +155,19 @@ export default function Coverletter() {
                   {errors.sourceName && touched.sourceName && errors.sourceName}
                 </div>
                 <div className="form-group">
+                  <label className="form-label">Highlights</label>
+                  <input
+                    type="text"
+                    name="highlight"
+                    id="highlight"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.highlight}
+                    className="form-control"
+                  />
+                  {errors.highlight && touched.highlight && errors.highlight}
+                </div>
+                <div className="form-group">
                   <label className="form-label">Experience in Years</label>
                   <input
                     type="text"
@@ -195,11 +210,16 @@ export default function Coverletter() {
                   />
                   {errors.skills && touched.skills && errors.skills}
                 </div>
-                <div></div>
+                <div className="mr-5 p-2">
+                  <button
+                    className="w-full bg-blue-200 p-2 m-1 border-2 border-color-blue-100 justify-content-center text-center"
+                    type="submit"
+                    disabled={isSubmitting}
+                  >
+                    Save
+                  </button>
+                </div>
               </div>
-              <button type="submit" disabled={isSubmitting}>
-                Save
-              </button>
             </form>
           )}
         </Formik>
@@ -208,7 +228,7 @@ export default function Coverletter() {
   };
   return (
     <div className="p-24 flex grid grid-cols-2 md:grid-cols-2 absolute">
-      <div className="p-2 m-2 bg-gray-100 grid-cols-2">
+      <div className="p-2 m-2 bg-gray-100 grid-cols-3">
         <CoverForm />
       </div>
       <div className="grid-cols-2 m-2">
