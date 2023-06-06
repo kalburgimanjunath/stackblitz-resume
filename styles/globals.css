@@ -45,3 +45,15 @@ a {
 .primary-button {
   border-radius: 10px;
 }
+.form-group {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  @apply font-bold;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+}
+.form-control {
+  padding: 5px;
+  @apply bg-pink-100 border-2 border-pink-600;
+}

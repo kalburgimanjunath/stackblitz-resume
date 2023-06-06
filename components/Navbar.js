@@ -25,6 +25,9 @@ export default function Navbar() {
         <li className="hover:bg-gray-100">
           <Link href="/project">Projects</Link>
         </li>
+        <li className="hover:bg-gray-100">
+          <Link href="/coverletter">Coverletter</Link>
+        </li>
       </ul>
     </div>
   );
