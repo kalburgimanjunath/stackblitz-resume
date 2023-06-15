@@ -1,32 +1,38 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import { BOOKS as ebooks } from '../api/books';
 export default function index() {
-  const books = [
-    {
-      id: 1,
-      title: 'Reactjs',
-      description: 'react-beginners-handbook',
-      pdfurl:
-        'https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook.pdf',
-      type: 'programming',
-    },
-    {
-      id: 1,
-      title: 'React Redux',
-      description: 'react-beginners-handbook',
-      pdfurl:
-        'https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook.pdf',
-      type: 'programming',
-    },
-    {
-      id: 1,
-      title: 'React Router',
-      description: 'react-beginners-handbook',
-      pdfurl:
-        'https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook.pdf',
-      type: 'programming',
-    },
-  ];
+  const [books, setBooks] = useState(null);
+  // const books = [
+  //   {
+  //     id: 1,
+  //     title: 'Reactjs',
+  //     description: 'react-beginners-handbook',
+  //     pdfurl:
+  //       'https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook.pdf',
+  //     type: 'programming',
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'React Redux',
+  //     description: 'react-beginners-handbook',
+  //     pdfurl:
+  //       'https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook.pdf',
+  //     type: 'programming',
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'React Router',
+  //     description: 'react-beginners-handbook',
+  //     pdfurl:
+  //       'https://www.lcg.ufrj.br/nodejs/books/react-beginners-handbook.pdf',
+  //     type: 'programming',
+  //   },
+  // ];
+
+  useEffect(() => {
+    return setBooks(ebooks);
+  });
 
   return (
     <div className="p-24 flex grid grid-cols-1 md:grid-cols-1">
@@ -41,12 +47,21 @@ export default function index() {
                 key={item.id}
                 className="border-2 border-color-ping-100 m-2 p-2  rounded-10 "
               >
-                <div className="p-2 m-2 font-bold text-2xlg text-center">
+                {/* <div className="p-2 m-2 font-bold text-2xlg text-center">
                   {item.id}
-                </div>
-                <Link href={`${item.pdfurl}`}>
-                  <div>{item.title}</div>
-                  <div>{item.description}</div>
+                </div> */}
+                <Link
+                  href={`${
+                    item.website == undefined
+                      ? item.url == undefined
+                        ? item.link
+                        : item.url
+                      : item.website
+                  }`}
+                  target="_new"
+                >
+                  <div className="font-bold">{item.title}</div>
+                  {/* <div>{item.description}</div> */}
                 </Link>
 
                 {/* <>
