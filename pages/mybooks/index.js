@@ -37,7 +37,7 @@ export default function index() {
   return (
     <div className="p-24 flex grid grid-cols-1 md:grid-cols-1">
       <h1 className="font-bold w-full">
-        Here is the list of Interesting books I went through.
+        Here is the list of Interesting books I wanted to go through.
       </h1>
       <div className="flex grid grid-cols-3 md:grid-cols-3">
         {books &&
