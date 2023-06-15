@@ -1,6 +1,20 @@
 import { Formik } from 'formik';
 import { useState, useEffect } from 'react';
+import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import ReactPDF from '@react-pdf/renderer';
 export default function Coverletter() {
+  // Create styles
+  const styles = StyleSheet.create({
+    page: {
+      flexDirection: 'row',
+      backgroundColor: '#E4E4E4',
+    },
+    section: {
+      margin: 10,
+      padding: 10,
+      flexGrow: 1,
+    },
+  });
   const [messageBody, setMessageBody] = useState('');
   const senderName = 'Manjunath Kalburgi';
   const receipentName = "[Recipient's Name]";
@@ -235,6 +249,11 @@ export default function Coverletter() {
         <h3>Cover Letter</h3>
         <div className="grid-cols-2">
           <pre className=" whitespace-pre-line">{messageBody}</pre>
+          {/* <Document>
+            <Page size="A4" style={styles.page}>
+              <View style={styles.section}>{messageBody}</View>
+            </Page>
+          </Document> */}
         </div>
       </div>
     </div>
